@@ -25,47 +25,51 @@
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <span>Ali</span>
+                <span>-A
+                    O
+                    C-</span>
             </div>
             <div class="links">
                 <div class="link"><a href="#">Inicio</a></div>
-                <div class="link"><a href="#">Sobre</a></div>
-                <div class="link"><a href="#">Skills</a></div>
+                <div class="link"><a href="#skills">Skills</a></div>
                 <div class="link"><a href="#">Projetos</a></div>
-                <div class="link"><a href="#">Redes Sociais</a></div>
-                <div class="link contact-btn"><a href="#">Contato</a></div>
+                <div class="link"><a href="#sobre">Sobre</a></div>
+                <div class="link"><a href="#rs">Redes Sociais</a></div>
+                <div class="link contact-btn"><a href="https://wa.me/5544998705279" target="_blank">Contato</a></div>
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
                 <a href="">Inicio</a>
                 <a href="">Sobre</a>
-                <a href="">Skills</a>
+                <a href="#card">Skills</a>
                 <a href="">Projetos</a>
                 <a href="">Redes Sociais</a>
                 <a href="">Contato</a>
-                <i class="fa-solid fa-xmark cancel"></i>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
+    </nav>
             <section>
                 <div class="main-container">
                     <div class="image">
                         <img src="/assets/eu.png" alt="">
                     </div>
-                    <div class="content">
+                    <div class="content" id="sobre">
                         <h1>Olá, Meu nome é <span> Ali</span></h1>
                         <div class="typewriter">Eu sou <span></span></div>
-                        <p>Lorem ipsum dolor sit amet. Et asperiores enim non reiciendis molestiae vel sapiente officia et numquam fuga vel dolor quis. Aut sunt voluptates ab numquam consequatur eos internos dolore. Et molestias distinctio est totam ipsum qui autem dignissimos et architecto deleniti ut fugit maiores.</p>
-                        <div class="social-links">
-                            <a href="https://github.com/aliosmarchehade"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ali-osmar-chehade-b5473a23b/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://x.com/aliosmarch "><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://www.instagram.com/aliosmarchehade/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                        <!-- <p>Lorem ipsum dolor sit amet. Et asperiores enim non reiciendis molestiae vel sapiente officia et numquam fuga vel dolor quis. Aut sunt voluptates ab numquam consequatur eos internos dolore. Et molestias distinctio est totam ipsum qui autem dignissimos et architecto deleniti ut fugit maiores.</p> -->
+                        <p>Me chamo Ali Osmar Chehade, tenho 20 anos, sou acadêmico do 3º ano de Engenharia de Software no Instituto Federal do Paraná - Campus Paranavaí. Sou um entusiasta da tecnologia, disposto sempre a aprender mais e mais. Meu primeiro contato com programação foi no ensino médio, também pelo IFPR aos 15 anos de idade. Ah, atualmente estou começando a me aventurar no mundo dos investimentos operando na bolsa de valores, o que une meu interesse por inovação ao desejo de crescer em diferentes áreas. Vamos construir algo incrível juntos?</p>
+                        <div class="social-links" id="rs">
+                            <a href="https://github.com/aliosmarchehade" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ali-osmar-chehade-b5473a23b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://x.com/aliosmarch " target="_blank"><i class="fa-brands fa-x-twitter" ></i></a>
+                            <a href="https://www.instagram.com/aliosmarchehade/" target="_blank"><i class="fa-brands fa-square-instagram"></i></i></a>
 
                         </div>
                         <div class="btn">
-                            <a href="assets/curriculo.pdf" download="curriculo.pdf" type="application/pdf" target="_blank" rel="_self"> 
+                            <a href="assets/curriculo.pdf" download="curriculo.pdf" type="application/pdf"  rel="_self"> 
                             <button>Download CV</button> 
                         </a>
                             
@@ -73,6 +77,29 @@
                     </div>
                 </div>
             </section>
-    </nav>
+            <section class="cards" id="skills">
+                <div class="interface">
+                    <h2 class="titulo">MINHAS <span>SKILLS</span></h2>
+                    <div class="flex">
+                        <div class="especialidades">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Hard Skills</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt minima, unde nostrum autem magni 
+                                nemo quasi sequi in atqu.</p>
+                        </div>
+                        <div class="especialidades">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h3>Website</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt minima, unde nostrum autem magni nemo quasi sequi in atque, dignissimos, ut quas fugiat ducimus vel. Quas reiciendis dolores perspiciatis odio.</p>
+                        </div>
+                        <div class="especialidades">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h3>Soft Skills</h3>
+                            <p>Boa comunicação interpessoal ; Habilidades e experiênicas para trabalhar em equipe ; Conhecimentos básicos e intermediários na língua inglesa ; Adaptabilidade e flexibilidade para lidar com mudanças e aprender rápidamente novos contextos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <script src="script.js"> </script>
 </body>
 </html>

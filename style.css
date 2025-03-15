@@ -14,7 +14,8 @@ html{
 body{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     background: linear-gradient(to right, rgb(255, 255, 255) /*rgb(255,215,173)*/, rgb(194, 180, 116));
 }
 
@@ -30,6 +31,16 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+h2.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: rgb(109,67,0);
 }
 
 .logo{
@@ -153,12 +164,13 @@ section{
 }
 
 .main-container .image img {
-    width: 50%;
-    display: block; /* Garante que a imagem seja tratada como bloco */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 55%;
+    display: block; 
+    margin: 0 auto; 
     position: relative;
     top: -1cm; /* Mantém o deslocamento vertical */
-    border-radius: 50px;
+    /* right: -4cm; */
+    border-radius: 80px 0; /*arredondamento da borda da ft*/
     border: dotted 4px rgb(177, 112, 8);
 }
 
@@ -166,6 +178,7 @@ section{
     color:black;
     width: 40%;
     min-height: 100px;
+    text-align: justify;
 }
 
 .content h1{
@@ -206,7 +219,7 @@ section{
 
 @keyframes cursor {
     to{
-        border-left: 3px solid #a033a0;
+        border-left: 3px solid rgb(199, 188, 142);
     }
 }
 
@@ -306,9 +319,13 @@ section{
  }
 
  .social-links i{
-    width: 2.5rem;
+    width: 2.5rem;  
     height: 2.5rem;
     font-size: 1.5rem;
+ }
+
+ .cancel{
+    color: white;
  }
 
  .main-container .image{
@@ -316,4 +333,51 @@ section{
     margin-bottom: 0px;
     
  }
+}
+
+/* estilos skills */
+
+section.cards{
+    padding: 40px 4%;
+    display: flex;
+}
+
+section.cards .flex{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.cards .especialidades{
+    color: black;
+    padding: 40px;
+    border-radius: 20px ;
+    border: 2px solid #685318;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: center;
+    width:460px; 
+}
+
+.cards .especialidades:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10000px #968149;
+}
+
+.cards .especialidades i{
+    font-size: 70px;
+    color: #000000;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.cards .especialidades h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+.cards .especialidades p{
+    font-size: 16px;
+    text-align: justify;
 }
