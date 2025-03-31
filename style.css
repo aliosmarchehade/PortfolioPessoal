@@ -344,6 +344,8 @@ section{
 section.cards{
     padding: 40px 4%;
     display: flex;
+    justify-content: center; 
+    align-items: center;
     
 }
 
