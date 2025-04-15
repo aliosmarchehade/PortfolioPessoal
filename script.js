@@ -18,3 +18,11 @@ window.onscroll=function () {
     }
     prevScrollpos = currentScrollpos;
 }
+function mostrarAvisoOnixx() {
+    Swal.fire({
+        icon: 'warning',
+        title: '🚧 Projeto em Construção 🚧',
+        text: 'O projeto Onixx ainda está sendo desenvolvido. Em breve traremos novidades!',
+        footer: '<i>Acompanhe pelo meu GitHub ou redes sociais para atualizações!</i>'
+    });
+}

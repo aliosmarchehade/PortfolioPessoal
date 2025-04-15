@@ -228,18 +228,19 @@ section{
 }
 
 @keyframes words {
-    0%, 25%{
+    0%, 20%{
         content: "Desenvolvedor";
     }
-    26%, 50%{
+    20%, 40%{
         content: "Estudante";
     }
-    51%, 75%{
+    40%, 60%{
         content: "Parametrizador";
     }
-    76%, 100%{
+    80%, 100%{
         content: "Investidor";
     }
+
 }
 
 .content p{
@@ -523,3 +524,4 @@ section.cards .flex{
 .carde:hover{
     transform: scale3d(1.1, 1.1, 1);
 }
+

@@ -7,19 +7,8 @@
     <title>Portifolio Ali</title>
     <link href="style.css" rel="stylesheet"/>
     
-    <!-- <style>
-        h3{
-            color: rgb(114, 88, 108);
-        }
-        .container{
-            width: 400px;
-            margin: auto;
-            border: 3px solid;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-            padding: 10px;
-        }
-    </style> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 </head>
 <body>
     <nav>
@@ -109,7 +98,26 @@
             <section class="projetos" id="projetos">
                 <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
                 <div class="interface-projetos">
+                    <div class="carde card-3">
+
                     
+                        <div class="card-header">
+                        <img src="./assets/pokedex.jpg" card="card-img">
+                        </div>
+
+                        <div class="card-body">
+                        <h3 class="card-local">Utilizando API</h3>
+                        <h2 class="card-titulo">Pokedex</h2>
+                        <p class="card-texto">Projeto desenvolvido para o 4º ano do meu curso técnico em informática pelo IFPR,
+                            utilizando HTML, CSS e JavaScript.
+                            </p>
+                        </div>
+
+                        <div class="card-footer">
+                        <a href="https://github.com/aliosmarchehade/Pokedex-PPW">Ver Mais</a>
+                        </div>
+                    </div>  
+
                     <div class="carde card-1">
 
                     
@@ -120,13 +128,14 @@
                         <div class="card-body">
                         <h3 class="card-local">Landing Page</h3>
                         <h2 class="card-titulo">Onixx</h2>
-                        <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                             Suscipit exercitationem ex quis iusto nam ut id dicta voluptatibus
+                        <p class="card-texto">Projeto ainda em progresso juntamente ao meu grupo, 
+                            onde iremos desenvolver um sistema real para uma garagem de carros.
                             </p>
                         </div>
 
                         <div class="card-footer">
-                        <a href="#">Ver Mais</a>
+                            <a href="javascript:void(0);" onclick="mostrarAvisoOnixx()">Ver Mais</a>
+
                         </div>
                     </div>
 
@@ -134,14 +143,14 @@
 
                     
                         <div class="card-header">
-                        <img src="./assets/ppt.jpg" card="card-img">
+                        <img src="./assets/pedra.jpg" card="card-img">
                         </div>
 
                         <div class="card-body">
                         <h3 class="card-local">Um projeto em python</h3>
                         <h2 class="card-titulo">JockeyPow</h2>
-                        <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                             Suscipit exercitationem ex quis iusto nam ut id dicta voluptatibus
+                        <p class="card-texto">Jogo "Pedra, papel e tesoura", desenvolvido em python utilizando apenas estruturas 
+                            de repetição while e condicionais if/elif
                             </p>
                         </div>
 
@@ -150,28 +159,10 @@
                         </div>
                     </div>    
                     
-                    <div class="carde card-3">
-
-                    
-                        <div class="card-header">
-                        <img src="./assets/pokedex.jpg" card="card-img">
-                        </div>
-
-                        <div class="card-body">
-                        <h3 class="card-local">Landing Page</h3>
-                        <h2 class="card-titulo">Pokedex</h2>
-                        <p class="card-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                             Suscipit exercitationem ex quis iusto nam ut id dicta voluptatibus
-                            </p>
-                        </div>
-
-                        <div class="card-footer">
-                        <a href="https://github.com/aliosmarchehade/jockeyPow_python">Ver Mais</a>
-                        </div>
-                    </div>  
                     
                 </div>
             </section>
         <script src="script.js"> </script>
+        
 </body>
 </html>
