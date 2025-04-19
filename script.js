@@ -26,3 +26,11 @@ function mostrarAvisoOnixx() {
         footer: '<i>Acompanhe pelo meu GitHub ou redes sociais para atualizações!</i>'
     });
 }
+
+function closeMenu() {
+    cancel(); 
+    
+    setTimeout(() => {
+        document.body.style.overflow = "auto"; 
+    }, 300);
+}

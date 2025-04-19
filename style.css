@@ -293,52 +293,6 @@ section{
     box-sizing: 0 0 40px rgb(109,67,0);
     
 }
-@media(max-width:884px){
-    body{
-        overflow-y: visible;
-    
-}
-
- nav .logo{
-    position: absolute;
-    top: 16px;
-    left: 15px;
-    font-size: 1.5rem;
- }
-
- .main-container{
-    display: flex;
-    flex-direction: column;
- }
-
- .nav-container .links{
-    display: none;
- }
-
- .hamburg,.cancel{
-    display: block;
- }
-
- .main-container .content{
-    width: 90%;
- }
-
- .social-links i{
-    width: 2.5rem;  
-    height: 2.5rem;
-    font-size: 1.5rem;
- }
-
- .cancel{
-    color: white;
- }
-
- .main-container .image{
-    width: 80%;
-    margin-bottom: 0px;
-    
- }
-}
 
 /* estilos skills */
 
@@ -393,42 +347,6 @@ section.cards .flex{
     text-align: justify;
 }
 
-
-@media(max-width:768px){
-
-    section {
-        min-height: auto; /* Ajuste a altura para se adaptar ao conteúdo */
-        padding: 20px 0; /* Reduza o padding para telas menores */
-    }
-    
-    section.cards{
-        padding: 20px 4%;
-        margin-top: 100px;
-    }
-    
-    .cards .especialidades {
-        width: 100%; /* Faz os cards ocuparem 100% da largura */
-        max-width: 100%; /* Remove a largura máxima */
-        padding: 20px; /* Reduz o padding interno */
-        margin-top: 20px; /* Reduz a margem superior */
-    }
-
-    .cards .especialidades i {
-        font-size: 50px; /* Reduz o tamanho do ícone */
-    }
-
-    .cards .especialidades h3 {
-        font-size: 24px; /* Reduz o tamanho do título */
-    }
-
-    .cards .especialidades p {
-        font-size: 14px; /* Reduz o tamanho do texto */
-    }
-
-    section.cards .flex {
-        gap: 20px; /* Reduz o espaçamento entre os cards */
-    }
-}
 
 .interface-projetos{
     width: 100%;
@@ -524,4 +442,152 @@ section.cards .flex{
 .carde:hover{
     transform: scale3d(1.1, 1.1, 1);
 }
+
+
+
+@media (max-width: 880px) {
+
+    body {
+        background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(194, 180, 116));
+    }
+    
+    section {
+        height: auto;
+        padding: 50px 0;
+    }
+    nav {
+        position: relative;
+        z-index: 100;
+    }
+    .nav-container .links{
+        display: none;
+     }
+
+     .hamburg,.cancel{
+        display: block;
+     }
+    
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .main-container .content {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .main-container .image {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .main-container .image img {
+            top: 0;
+            width: 100%;
+    }
+    
+    /* Ajustes para a seção de skills */
+    .cards .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards .especialidades {
+        width: 90%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    
+ 
+    .interface-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carde {
+        width: 90%;
+        max-width: 350px;
+        margin: 15px 0;
+    }
+    
+    .card-header {
+        width: 100%;
+    }
+    
+   
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .typewriter {
+        font-size: 1.5rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .content button {
+        width: 60%;
+        height: 50px;
+    }
+    
+   
+    .nav-container .links {
+        gap: 2rem;
+    }
+    
+    
+    .typewriter span::after {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .typewriter {
+        font-size: 1.2rem;
+    }
+    
+    .content p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links i {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .cards .especialidades {
+        padding: 20px;
+    }
+    
+    .carde {
+        height: auto;
+    }
+    
+    .card-body {
+        height: auto;
+        padding: 10px;
+    }
+    
+    .card-footer {
+        margin-top: 20px;
+    }
+}
+
+
 
