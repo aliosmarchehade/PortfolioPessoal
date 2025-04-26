@@ -24,6 +24,7 @@
                 <div class="link"><a href="#projetos">Projetos</a></div>
                 <div class="link"><a href="#sobre">Sobre</a></div>
                 <div class="link"><a href="#rs">Redes Sociais</a></div>
+                <div class="link"><a href="#ec">Entre em Contato</a></div>
                 <div class="link contact-btn"><a href="https://wa.me/5544998705279" target="_blank">Contato</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
@@ -34,6 +35,7 @@
                 <a href="#skills" onclick="closeMenu()">Skills</a>
                 <a href="#projetos" onclick="closeMenu()">Projetos</a>
                 <a href="#rs" onclick="closeMenu()">Redes Sociais</a>
+                <a href="#ec" onclick="closeMenu()">Entre em Contato</a>
                 <a href="https://wa.me/5544998705279" target="_blank" onclick="closeMenu()">Contato</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
@@ -159,7 +161,19 @@
                     
                     
                 </div>
+            </section>  
+            <section class="contato" id="ec">
+                <div class="interface">
+                    <h2 class="titulo">ENTRE EM <span>CONTATO</span></h2>
+                    <form class="formulario" onsubmit="enviarMensagem(event)">
+                        <input type="text" name="nome" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </section>
+            
         <script src="script.js"> </script>
         
 </body>

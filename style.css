@@ -589,3 +589,48 @@ section.cards .flex{
 
 
 
+.contato {
+    padding: 50px 20px;
+    background-color: linear-gradient(to right, rgb(255, 255, 255), rgb(194, 180, 116));
+}
+
+.contato .interface {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(109,67,0);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.formulario button {
+    background-color: rgb(134, 104, 59);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: rgb(75, 50, 11);
+}
