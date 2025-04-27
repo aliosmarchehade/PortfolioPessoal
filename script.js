@@ -34,6 +34,7 @@
             document.body.style.overflow = "auto"; 
         }, 300);
     }
+    
     function enviarMensagem(event) {
     event.preventDefault();
     
