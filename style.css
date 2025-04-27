@@ -107,15 +107,7 @@ h2.titulo span{
     transition: 0.3s linear;
 
 }
-.nav-container .contact-btn a i {
-    font-size: 2rem;
-    color: rgb(8, 148, 8);
-    transition: 0.3s;
-}
 
-.nav-container .contact-btn:hover a i {
-    color: white;
-}
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover{
     background-color: rgb(109,67,0);
     color: white;
