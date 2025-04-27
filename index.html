@@ -11,6 +11,7 @@
     
 </head>
 <body>
+    
     <nav>
         <div class="nav-container">
             <div class="logo">
@@ -18,14 +19,21 @@
                     O
                     C-</span>
             </div>
+            
             <div class="links">
-                <div class="link"><a href="#">Inicio</a></div>
-                <div class="link"><a href="#skills">Skills</a></div>
-                <div class="link"><a href="#projetos">Projetos</a></div>
-                <div class="link"><a href="#sobre">Sobre</a></div>
-                <div class="link"><a href="#rs">Redes Sociais</a></div>
-                <div class="link"><a href="#ec">Entre em Contato</a></div>
-                <div class="link contact-btn"><a href="https://wa.me/5544998705279" target="_blank">Contato</a></div>
+                <div class="idiomas">
+                    <span class="idioma-label">Idiomas:</span>
+                    <button onclick="alterarIdioma('en')">EN</button>
+                    <button onclick="alterarIdioma('pt')">PT</button>
+                </div>
+                <div class="link"><a href="#" data-i18n = "inicio">Inicio</a></div>
+                <div class="link"><a href="#skills" data-i18n = "sk">Skills</a></div>
+                <div class="link"><a href="#projetos"data-i18n = "pjt">Projetos</a></div>
+                <div class="link"><a href="#sobre" data-i18n = "ssobre">Sobre</a></div>
+                <div class="link"><a href="#rs"data-i18n = "redes">Redes Sociais</a></div>
+                <div class="link"><a href="#ec"data-i18n = "ctt">Entre em Contato</a></div>
+                
+                <div class="link contact-btn"><a href="https://wa.me/5544998705279" target="_blank"> <i class="fab fa-whatsapp"></i></a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
@@ -36,7 +44,7 @@
                 <a href="#projetos" onclick="closeMenu()">Projetos</a>
                 <a href="#rs" onclick="closeMenu()">Redes Sociais</a>
                 <a href="#ec" onclick="closeMenu()">Entre em Contato</a>
-                <a href="https://wa.me/5544998705279" target="_blank" onclick="closeMenu()">Contato</a>
+                <a href="https://wa.me/5544998705279" target="_blank" onclick="closeMenu()">Whatsapp</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -47,9 +55,12 @@
                         <img src="/assets/eu.png" alt="">
                     </div>
                     <div class="content" id="sobre">
-                        <h1>Olá, Meu nome é <span> Ali</span></h1>
-                        <div class="typewriter">Eu sou <span></span></div>
-                        <p>Me chamo Ali Osmar Chehade, tenho 20 anos, sou acadêmico do 3º ano de Engenharia de Software no Instituto Federal do Paraná - Campus Paranavaí. Sou um entusiasta da tecnologia, disposto sempre a aprender mais e mais. Meu primeiro contato com programação foi no ensino médio, também pelo IFPR aos 15 anos de idade. Ah, atualmente estou começando a me aventurar no mundo dos investimentos operando na bolsa de valores, o que une meu interesse por inovação ao desejo de crescer em diferentes áreas. Vamos construir algo incrível juntos?</p>
+                        <h1> <span data-i18n = "nome"> Olá, Meu nome é </span> <span2 data-i18n = "meunome"> Ali</span2></h1>
+                        <div class="typewriter">
+                            <span class="eu-sou" data-i18n="eusou">Eu sou</span>
+                            <span class="digitando"></span>
+                          </div>
+                        <p><span data-i18n = "descricao">Me chamo Ali Osmar Chehade, tenho 20 anos, sou acadêmico do 3º ano de Engenharia de Software no Instituto Federal do Paraná - Campus Paranavaí. Sou um entusiasta da tecnologia, disposto sempre a aprender mais e mais. Meu primeiro contato com programação foi no ensino médio, também pelo IFPR aos 15 anos de idade. Ah, atualmente estou começando a me aventurar no mundo dos investimentos operando na bolsa de valores, o que une meu interesse por inovação ao desejo de crescer em diferentes áreas. Vamos construir algo incrível juntos?</span> </p>
                         <div class="social-links" id="rs">
                             <a href="https://github.com/aliosmarchehade" target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a href="https://www.linkedin.com/in/ali-osmar-chehade-b5473a23b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -68,35 +79,35 @@
             </section>
             <section class="cards" id="skills">
                 <div class="interface">
-                    <h2 class="titulo">MINHAS <span>SKILLS</span></h2>
+                    <h2 class="titulo"><span data-i18n = "minhas">MINHAS</span>  <span2 data-i18n = "skillls">SKILLS</span2></h2>
                     <div class="flex">
                         <div class="especialidades">
                             <i class="fa-solid fa-code"></i>
                             <h3>Hard Skills</h3>
                             <p> 
-                                <strong>Java: </strong> Utilizado tanto em meu ensino médio quanto no superior para desenvolvimento de aplicações desktop e lógica de programação.
+                                <strong>Java</strong> <span data-i18n = "java">Utilizado tanto em meu ensino médio quanto no superior para desenvolvimento de aplicações desktop e lógica de programação.</span> 
                                 
-                                <strong>Python: </strong>Conhecimento em scripts, análise de dados e desenvolvimento de soluções escaláveis.
+                                <strong>Python: </strong><span data-i18n = "python">Conhecimento em scripts, análise de dados e desenvolvimento de soluções escaláveis.</span>
                                 
-                                <strong>Banco de Dados SQL: </strong>Experiência em criação, manipulação e consulta de bancos de dados relacionais.
+                                <strong><span data-i18n = "bd">Banco de Dados SQL:</span></strong> <span data-i18n="bd2">Experiência em criação, manipulação e consulta de bancos de dados relacionais.</span> 
                                 
-                                <strong>HTML, CSS e JavaScript: </strong>Habilidades para criação de interfaces responsivas e interativas, com foco em front-end. </p>
+                                <strong>HTML, CSS e JavaScript: </strong><span data-i18n="hcssj">Habilidades para criação de interfaces responsivas e interativas, com foco em front-end.</span>  </p>
                         </div>
                         <div class="especialidades">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
-                            <h3>Resolução de Problemas</h3>
-                            <p>Habilidade analítica para identificar, estruturar e resolver problemas complexos de forma eficiente, aplicando lógica, pensamento crítico e abordagens estruturadas. Capacidade de decompor desafios em partes menores, analisar possíveis soluções e implementar a mais adequada, considerando prazos, recursos e impactos.</p>
+                            <h3><span data-i18n="resolu">Resolução de Problemas</span></h3>
+                            <p><span data-i18n="rr">Habilidade analítica para identificar, estruturar e resolver problemas complexos de forma eficiente, aplicando lógica, pensamento crítico e abordagens estruturadas. Capacidade de decompor desafios em partes menores, analisar possíveis soluções e implementar a mais adequada, considerando prazos, recursos e impactos.</span></p>
                         </div>
                         <div class="especialidades">
                             <i class="fa-solid fa-lightbulb"></i>
                             <h3>Soft Skills</h3>
-                            <p>Boa comunicação interpessoal ; Habilidades e experiênicas para trabalhar em equipe ; Conhecimentos básicos e intermediários na língua inglesa ; Adaptabilidade e flexibilidade para lidar com mudanças e aprender rápidamente novos contextos.</p>
+                            <p><span data-i18n="sf">Boa comunicação interpessoal ; Habilidades e experiênicas para trabalhar em equipe ; Conhecimentos básicos e intermediários na língua inglesa ; Adaptabilidade e flexibilidade para lidar com mudanças e aprender rápidamente novos contextos.</span></p>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="projetos" id="projetos">
-                <h2 class="titulo">MEUS <span>PROJETOS</span></h2>
+                <h2 class="titulo"><span data-i18n="meus">MEUS</span> <span2 data-i18n="projetos">PROJETOS</span2></h2>
                 <div class="interface-projetos">
                     <div class="carde card-3">
 
@@ -106,15 +117,15 @@
                         </div>
 
                         <div class="card-body">
-                        <h3 class="card-local">Utilizando API</h3>
+                        <h3 class="card-local"><span data-i18n="api">Utilizando API</span></h3>
                         <h2 class="card-titulo">Pokedex</h2>
-                        <p class="card-texto">Projeto desenvolvido para o 4º ano do meu curso técnico em informática pelo IFPR,
-                            utilizando HTML, CSS e JavaScript.
+                        <p class="card-texto"> <span data-i18n="pokedex">Projeto desenvolvido para o 4º ano do meu curso técnico em informática pelo IFPR,
+                            utilizando HTML, CSS e JavaScript.</span> 
                             </p>
                         </div>
 
                         <div class="card-footer">
-                        <a href="https://github.com/aliosmarchehade/Pokedex-PPW">Ver Mais</a>
+                        <a href="https://github.com/aliosmarchehade/Pokedex-PPW"><span data-i18n="vermais">Ver Mais</span></a>
                         </div>
                     </div>  
 
@@ -128,13 +139,13 @@
                         <div class="card-body">
                         <h3 class="card-local">Landing Page</h3>
                         <h2 class="card-titulo">Onixx</h2>
-                        <p class="card-texto">Projeto ainda em progresso juntamente ao meu grupo, 
-                            onde iremos desenvolver um sistema real para uma garagem de carros.
+                        <p class="card-texto"> <span data-i18n="onixx"> Projeto ainda em progresso juntamente ao meu grupo, 
+                            onde iremos desenvolver um sistema real para uma garagem de carros.</span> 
                             </p>
                         </div>
 
                         <div class="card-footer">
-                            <a href="javascript:void(0);" onclick="mostrarAvisoOnixx()">Ver Mais</a>
+                            <a href="javascript:void(0);" onclick="mostrarAvisoOnixx()"><span data-i18n="vermais">Ver Mais</span></a>
 
                         </div>
                     </div>
@@ -147,15 +158,15 @@
                         </div>
 
                         <div class="card-body">
-                        <h3 class="card-local">Um projeto em python</h3>
+                        <h3 class="card-local"> <span data-i18n="upp">Um projeto em python</span></h3>
                         <h2 class="card-titulo">JockeyPow</h2>
-                        <p class="card-texto">Jogo "Pedra, papel e tesoura", desenvolvido em python utilizando apenas estruturas 
-                            de repetição while e condicionais if/elif
+                        <p class="card-texto"> <span data-i18n="ppt"> Jogo "Pedra, papel e tesoura", desenvolvido em python utilizando apenas estruturas 
+                            de repetição while e condicionais if/elif </span> 
                             </p>
                         </div>
 
                         <div class="card-footer">
-                        <a href="https://github.com/aliosmarchehade/jockeyPow_python">Ver Mais</a>
+                        <a href="https://github.com/aliosmarchehade/jockeyPow_python"><span data-i18n="vermais">Ver Mais</span></a>
                         </div>
                     </div>    
                     
@@ -164,12 +175,12 @@
             </section>  
             <section class="contato" id="ec">
                 <div class="interface">
-                    <h2 class="titulo">ENTRE EM <span>CONTATO</span></h2>
+                    <h2 class="titulo"> <span2 data-i18n = "entre">ENTRE EM </span2><span data-i18n = "contato"> CONTATO</span></h2>
                     <form class="formulario" onsubmit="enviarMensagem(event)">
-                        <input type="text" name="nome" placeholder="Seu nome" required>
-                        <input type="email" name="email" placeholder="Seu email" required>
-                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
+                        <input type="text" name="nome" data-i18n-placeholder="seunome" placeholder="Seu nome" required>
+                        <input type="email" name="email" data-i18n-placeholder="seuemail" placeholder="Seu email" required>
+                        <textarea name="mensagem" data-i18n-placeholder="suamensagem" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit"> <span data-i18n="enviar">Enviar</span></button>
                     </form>
                 </div>
             </section>
