@@ -1,0 +1,46 @@
+{
+    "inicio": "Home",
+    "sk": "Skills",
+    "pjt": "Projects",
+    "ssobre": "About",
+    "redes": "Social Medias",
+    "ctt": "Contact US",
+
+    "nome": "Hello, my name is",
+    "meunome": "Ali",
+    "eusou": "I am",
+    "descricao": "My name is Ali Osmar Chehade, I'm 20 years old, I'm a 3rd year Software Engineering student at the Instituto Federal do Paraná - Campus Paranavaí. I am a technology enthusiast, always willing to learn more and more. My first contact with programming was in high school, also at IFPR at 15 years old. Ah, I'm currently starting to venture into the world of investments operating on the stock exchange, which combines my interest in innovation with the desire to grow in different areas. Let's build something incredible together?",
+
+    "minhas": "MY",
+    "skillls": "SKILLS",
+
+    "java": "Used both in my high school and higher education for developing desktop applications and programming logic.",
+    "python": "Knowledge of scripts, data analysis and development of scalable solutions.",
+    "bd":"SQL Database:",
+    "bd2":"Experience in creating, manipulating and querying relational databases.",
+    "hcssj": "Skills for creating responsive and interactive interfaces, with a focus on front-end.",
+    "resolu": "Troubleshooting",
+    "rr": "Analytical ability to identify, structure and solve complex problems efficiently, applying logic, critical thinking and structured approaches. Ability to break down challenges into smaller parts, analyze possible solutions and implement the most appropriate one, considering deadlines, resources and impacts.",
+    "sf": "Good interpersonal communication; Skills and experience to work in a team; Basic and intermediate knowledge of the English language; Adaptability and flexibility to deal with changes and quickly learn new contexts",
+
+    "meus": "MY",
+    "projetos": "PROJECTS",
+    "api": "Using API",
+    "upp": "A python project",
+    "pokedex": "Project developed for the 4th year of my IT technical course at IFPR, using HTML, CSS and JavaScript.",
+    "onixx": "Project still in progress with my group, where we will develop a real system for a car garage.",
+    "ppt": "Game Rock, paper, scissors, developed in Python using only structures while repetition and if/elif conditionals.",
+    "vermais": "See More",
+
+    "entre": "CONTACT",
+    "contato": "ME",
+
+    "seunome": "Your name",
+    "seuemail": "Your email",
+    "suamensagem": "Your message",
+    "enviar": "To send"
+
+    
+
+
+}

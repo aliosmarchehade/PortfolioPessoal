@@ -1,0 +1,43 @@
+{
+    "inicio": "Inicio",
+    "sk": "Skills",
+    "pjt": "Projetos",
+    "ssobre": "Sobre",
+    "redes": "Redes Sociais",
+    "ctt": "Entre em Contato",
+
+    "nome": "Olá, meu nome é",
+    "meunome": "Ali",
+    "eusou": "Eu sou",
+    "descricao": "Me chamo Ali Osmar Chehade, tenho 20 anos, sou acadêmico do 3º ano de Engenharia de Software no Instituto Federal do Paraná - Campus Paranavaí. Sou um entusiasta da tecnologia, disposto sempre a aprender mais e mais. Meu primeiro contato com programação foi no ensino médio, também pelo IFPR aos 15 anos de idade. Ah, atualmente estou começando a me aventurar no mundo dos investimentos operando na bolsa de valores, o que une meu interesse por inovação ao desejo de crescer em diferentes áreas. Vamos construir algo incrível juntos?",
+
+    "minhas": "MINHAS",
+    "skillls": "SKILLS",
+
+    "java": "Utilizado tanto em meu ensino médio quanto no superior para desenvolvimento de aplicações desktop e lógica de programação.",
+    "python": "Conhecimento em scripts, análise de dados e desenvolvimento de soluções escaláveis.",
+    "bd":"Banco de Dados SQL:",
+    "bd2":"Experiência em criação, manipulação e consulta de bancos de dados relacionais.",
+    "hcssj": "Habilidades para criação de interfaces responsivas e interativas, com foco em front-end.",
+    "resolu":"Resolução de Problemas",
+    "rr": "Habilidade analítica para identificar, estruturar e resolver problemas complexos de forma eficiente, aplicando lógica, pensamento crítico e abordagens estruturadas. Capacidade de decompor desafios em partes menores, analisar possíveis soluções e implementar a mais adequada, considerando prazos, recursos e impactos.",
+    "sf": "Boa comunicação interpessoal ; Habilidades e experiênicas para trabalhar em equipe ; Conhecimentos básicos e intermediários na língua inglesa ; Adaptabilidade e flexibilidade para lidar com mudanças e aprender rápidamente novos contextos.",
+
+    "meus": "MEUS",
+    "projetos": "PROJETOS",
+    "api":"Utilizando API",
+    "upp": "Um projeto em python",
+    "pokedex": "Projeto desenvolvido para o 4º ano do meu curso técnico em informática pelo IFPR, utilizando HTML, CSS e JavaScript.",
+    "onixx": "Projeto ainda em progresso juntamente ao meu grupo, onde iremos desenvolver um sistema real para uma garagem de carros.",
+    "ppt": "Jogo Pedra, papel e tesoura, desenvolvido em python utilizando apenas estruturas de repetição while e condicionais if/elif",
+    "vermais": "Ver Mais",
+
+    "entre": "ENTRE EM ",
+    "contato": "CONTATO",
+
+    "seunome": "Seu nome",
+    "seuemail": "Seu email",
+    "suamensagem": "Sua mensagem",
+    "enviar": "Enviar"
+                                
+}

@@ -43,16 +43,7 @@ h2.titulo span{
     color: rgb(109,67,0);
 }
 
-.logo{
-    color: black;
-    font-size: 2rem;
-    font-weight: bolder;
-}
 
-.logo span{
-    color: rgb(109,67,0);
-    text-shadow: 0 0 10px rgb(109,67,0);
-}
 
 .hamburg, .cancel{
     cursor: pointer;
@@ -108,6 +99,16 @@ h2.titulo span{
 
 }
 
+.nav-container .contact-btn a i {
+    font-size: 2rem;
+    color: rgb(13, 129, 28);
+    transition: 0.3s;
+}
+
+.nav-container .contact-btn:hover a i {
+    color: white;
+}
+
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover{
     background-color: rgb(109,67,0);
     color: white;
@@ -159,10 +160,9 @@ section{
 }
 
 .main-container .image{
-    /* z-index: -1; */
+    
     display: flex;
     justify-content: center;
-    /* width: 40%; */
 }
 
 .main-container .image img {
@@ -173,8 +173,7 @@ section{
     margin: 0 auto; 
     position: relative;
     top: -1cm; /* Mantém o deslocamento vertical */
-    /* right: -4cm; */
-    border-radius: 80px 0; /*arredondamento da borda da ft*/
+    border-radius: 80px 0; 
     border: dotted 4px rgb(177, 112, 8);
 }
 
@@ -190,16 +189,27 @@ section{
 }
 
 .content h1 span{
+    color: rgb(0, 0, 0);
+}
+
+.content h1 span2{
     color: rgb(109,67,0);
     text-shadow: 0 0 10px rgb(109,67,0);
 }
-
-.content .typewriter{
+.content .typewriter {
     font-weight: 600;
-    font-size: clamp(1rem,1rem + 5vw, 2rem);
+    font-size: clamp(1rem, 1rem + 5vw, 2rem);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* espaço entre "Eu sou" e o que está digitando */
 }
 
-.content .typewriter span{
+.content .typewriter .eu-sou {
+    color: black; /* cor do texto "Eu sou" */
+    font-size: 2.5rem;
+}
+
+.content .typewriter .digitando {
     color: rgb(109,67,0);
     font-size: 2.5rem;
     text-shadow: 0 0 5px rgb(109,67,0);
@@ -207,12 +217,12 @@ section{
     transition: 0.3s linear;
 }
 
-.typewriter span::before{
-    content: "Desenvolvedor";
+.typewriter .digitando::before {
+    content: "Desenvolvedor"; /* Texto inicial */
     animation: words 15s infinite;
 }
 
-.typewriter span::after{
+.typewriter .digitando::after {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
@@ -220,7 +230,6 @@ section{
     border-left: 3px solid black;
     animation: cursor 0.6s linear infinite;
 }
-
 @keyframes cursor {
     to{
         border-left: 3px solid rgb(199, 188, 142);
@@ -228,20 +237,22 @@ section{
 }
 
 @keyframes words {
-    0%, 20%{
+    0%, 25%{
         content: "Desenvolvedor";
     }
-    20%, 40%{
+    25%, 50%{
         content: "Estudante";
     }
-    40%, 60%{
+    50%, 75%{
         content: "Parametrizador";
     }
-    80%, 100%{
+    75%, 100%{
         content: "Investidor";
     }
 
 }
+
+
 
 .content p{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
@@ -292,52 +303,6 @@ section{
     font-weight: 700;
     box-sizing: 0 0 40px rgb(109,67,0);
     
-}
-@media(max-width:884px){
-    body{
-        overflow-y: visible;
-    
-}
-
- nav .logo{
-    position: absolute;
-    top: 16px;
-    left: 15px;
-    font-size: 1.5rem;
- }
-
- .main-container{
-    display: flex;
-    flex-direction: column;
- }
-
- .nav-container .links{
-    display: none;
- }
-
- .hamburg,.cancel{
-    display: block;
- }
-
- .main-container .content{
-    width: 90%;
- }
-
- .social-links i{
-    width: 2.5rem;  
-    height: 2.5rem;
-    font-size: 1.5rem;
- }
-
- .cancel{
-    color: white;
- }
-
- .main-container .image{
-    width: 80%;
-    margin-bottom: 0px;
-    
- }
 }
 
 /* estilos skills */
@@ -394,42 +359,6 @@ section.cards .flex{
 }
 
 
-@media(max-width:768px){
-
-    section {
-        min-height: auto; /* Ajuste a altura para se adaptar ao conteúdo */
-        padding: 20px 0; /* Reduza o padding para telas menores */
-    }
-    
-    section.cards{
-        padding: 20px 4%;
-        margin-top: 100px;
-    }
-    
-    .cards .especialidades {
-        width: 100%; /* Faz os cards ocuparem 100% da largura */
-        max-width: 100%; /* Remove a largura máxima */
-        padding: 20px; /* Reduz o padding interno */
-        margin-top: 20px; /* Reduz a margem superior */
-    }
-
-    .cards .especialidades i {
-        font-size: 50px; /* Reduz o tamanho do ícone */
-    }
-
-    .cards .especialidades h3 {
-        font-size: 24px; /* Reduz o tamanho do título */
-    }
-
-    .cards .especialidades p {
-        font-size: 14px; /* Reduz o tamanho do texto */
-    }
-
-    section.cards .flex {
-        gap: 20px; /* Reduz o espaçamento entre os cards */
-    }
-}
-
 .interface-projetos{
     width: 100%;
     display: flex;
@@ -457,7 +386,7 @@ section.cards .flex{
 .card-header img {
     width: 100%;  
     height: 168%; 
-    object-fit: cover; /* Pra nao disotrcer a imagem */
+    object-fit: cover; 
 }
 
 .card-img{
@@ -518,10 +447,295 @@ section.cards .flex{
 }
 
 .card-footer a:hover {
-    background-color: #50484a; /* Nova cor quando o mouse passa */
+    background-color: #50484a; 
 }
 
 .carde:hover{
     transform: scale3d(1.1, 1.1, 1);
 }
 
+
+
+@media (max-width: 880px) {
+
+    body {
+        background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(194, 180, 116));
+    }
+    
+    section {
+        height: auto;
+        padding: 50px 0;
+    }
+    nav {
+        position: relative;
+        z-index: 100;
+    }
+    .nav-container .links{
+        display: none;
+     }
+
+     .hamburg,.cancel{
+        display: block;
+     }
+    
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .main-container .content {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .main-container .image {
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .main-container .image img {
+            top: 0;
+            width: 100%;
+    }
+    
+    /* Ajustes para a seção de skills */
+    .cards .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards .especialidades {
+        width: 90%;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+    
+ 
+    .interface-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carde {
+        width: 90%;
+        max-width: 350px;
+        margin: 15px 0;
+    }
+    
+    .card-header {
+        width: 100%;
+    }
+    
+   
+    .content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .typewriter {
+        font-size: 1.5rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .content button {
+        width: 60%;
+        height: 50px;
+    }
+    
+   
+    .nav-container .links {
+        gap: 2rem;
+    }
+    
+    
+    .typewriter span::after {
+        display: none; 
+    }
+
+    
+}
+
+
+@media (max-width: 400px) {
+   
+    .content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .typewriter {
+        font-size: 1.2rem;
+    }
+    
+    .content p {
+        font-size: 0.9rem;
+    }
+    
+    .social-links i {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    
+    .cards .especialidades {
+        padding: 20px;
+    }
+    
+    .carde {
+        height: auto;
+    }
+    
+    .card-body {
+        height: auto;
+        padding: 10px;
+    }
+    
+    .card-footer {
+        margin-top: 20px;
+    }
+}
+
+
+
+.contato {
+    padding: 50px 20px;
+    background-color: linear-gradient(to right, rgb(255, 255, 255), rgb(194, 180, 116));
+}
+
+.contato .interface {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(109,67,0);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.formulario button {
+    background-color: rgb(134, 104, 59);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario button:hover {
+    background-color: rgb(75, 50, 11);
+}
+
+.idiomas {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.idioma-label {
+    position: initial;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.idiomas-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.idiomas-mobile .bandeira {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.idiomas-mobile .bandeira:hover {
+    transform: scale(1.1);
+}
+
+.idiomas button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #1c8a6e,
+                -6px -6px 12px #3a1905;
+    font-weight: 700;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 5s infinite;
+}
+
+.idiomas button:hover {
+    background: linear-gradient(145deg, #6d4300, #8a5500);
+    color: #fff;
+    box-shadow: 4px 4px 8px #5a3700,
+                -4px -4px 8px #804f00;
+    transform: scale(1.05);
+}
+
+.idiomas button:active {
+    background: linear-gradient(145deg, #543300, #6d3b00);
+    box-shadow: inset 4px 4px 8px #472a00,
+                inset -4px -4px 8px #603a00;
+    transform: scale(0.95);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+.idiomas {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.idiomas .bandeira {
+    width: 50px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.idiomas .bandeira:hover {
+    transform: scale(1.2);
+}
