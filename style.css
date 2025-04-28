@@ -43,7 +43,16 @@ h2.titulo span{
     color: rgb(109,67,0);
 }
 
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
 
+.logo span{
+    color: rgb(109,67,0);
+    text-shadow: 0 0 10px rgb(109,67,0);
+}
 
 .hamburg, .cancel{
     cursor: pointer;
@@ -109,16 +118,6 @@ h2.titulo span{
     color: white;
 }
 
-.nav-container .contact-btn a i {
-    font-size: 2rem;
-    color: rgb(13, 129, 28);
-    transition: 0.3s;
-}
-
-.nav-container .contact-btn:hover a i {
-    color: white;
-}
-
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover{
     background-color: rgb(109,67,0);
     color: white;
@@ -171,7 +170,6 @@ section{
 
 .main-container .image{
     
-    
     display: flex;
     justify-content: center;
 }
@@ -184,7 +182,6 @@ section{
     margin: 0 auto; 
     position: relative;
     top: -1cm; /* Mantém o deslocamento vertical */
-    border-radius: 80px 0; 
     border-radius: 80px 0; 
     border: dotted 4px rgb(177, 112, 8);
 }
@@ -205,32 +202,17 @@ section{
 }
 
 .content h1 span2{
-    color: rgb(0, 0, 0);
-}
-
-.content h1 span2{
     color: rgb(109,67,0);
     text-shadow: 0 0 10px rgb(109,67,0);
 }
-.content .typewriter {
 .content .typewriter {
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 5vw, 2rem);
     display: flex;
     align-items: center;
     gap: 10px; /* espaço entre "Eu sou" e o que está digitando */
-    font-size: clamp(1rem, 1rem + 5vw, 2rem);
-    display: flex;
-    align-items: center;
-    gap: 10px; /* espaço entre "Eu sou" e o que está digitando */
 }
 
-.content .typewriter .eu-sou {
-    color: black; /* cor do texto "Eu sou" */
-    font-size: 2.5rem;
-}
-
-.content .typewriter .digitando {
 .content .typewriter .eu-sou {
     color: black; /* cor do texto "Eu sou" */
     font-size: 2.5rem;
@@ -246,12 +228,9 @@ section{
 
 .typewriter .digitando::before {
     content: "Desenvolvedor"; /* Texto inicial */
-.typewriter .digitando::before {
-    content: "Desenvolvedor"; /* Texto inicial */
     animation: words 15s infinite;
 }
 
-.typewriter .digitando::after {
 .typewriter .digitando::after {
     content: "";
     position: absolute;
@@ -268,25 +247,19 @@ section{
 
 @keyframes words {
     0%, 25%{
-    0%, 25%{
         content: "Desenvolvedor";
     }
-    25%, 50%{
     25%, 50%{
         content: "Estudante";
     }
     50%, 75%{
-    50%, 75%{
         content: "Parametrizador";
     }
-    75%, 100%{
     75%, 100%{
         content: "Investidor";
     }
 
 }
-
-
 
 .content p{
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
@@ -421,7 +394,6 @@ section.cards .flex{
     width: 100%;  
     height: 168%; 
     object-fit: cover; 
-    object-fit: cover; 
 }
 
 .card-img{
@@ -482,7 +454,6 @@ section.cards .flex{
 }
 
 .card-footer a:hover {
-    background-color: #50484a; 
     background-color: #50484a; 
 }
 
@@ -592,13 +563,14 @@ section.cards .flex{
     .typewriter span::after {
         display: none; 
     }
-
-    
 }
 
 
 @media (max-width: 400px) {
-   
+    .logo {
+        font-size: 1.2rem;
+    }
+    
     .content h1 {
         font-size: 1.5rem;
     }
@@ -698,6 +670,23 @@ section.cards .flex{
 
 }
 
+.idiomas {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.idiomas .bandeira {
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.idiomas .bandeira:hover {
+    transform: scale(1.2);
+}
+
 .idiomas-mobile {
     display: flex;
     justify-content: center;
@@ -757,21 +746,4 @@ section.cards .flex{
     50% {
         transform: scale(1.03);
     }
-}
-
-.idiomas {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.idiomas .bandeira {
-    width: 50px;
-    height: 32px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.idiomas .bandeira:hover {
-    transform: scale(1.2);
 }
