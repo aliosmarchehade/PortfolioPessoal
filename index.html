@@ -7,7 +7,7 @@
     <title>Portifolio Ali</title>
     <link href="style.css" rel="stylesheet"/>
     
-    <script src="https://   cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </head>
 <body>
@@ -21,6 +21,7 @@
                 <div class="idiomas">
                     <img src="assets/eua.png" alt="English" onclick="alterarIdioma('en')" class="bandeira">
                     <img src="assets/brasa.png" alt="Português" onclick="alterarIdioma('pt')" class="bandeira">
+                    <img src="assets/lbn.png" alt="Arabe" onclick="alterarIdioma('lb')" class="bandeira">
                 </div>
                 <div class="link"><a href="#" data-i18n = "inicio">Inicio</a></div>
                 <div class="link"><a href="#skills" data-i18n = "sk">Skills</a></div>
@@ -38,13 +39,14 @@
                 <div class="idiomas-mobile">
                     <img src="assets/eua.png" alt="English" onclick="alterarIdioma('en')" class="bandeira">
                     <img src="assets/brasa.png" alt="Português" onclick="alterarIdioma('pt')" class="bandeira">
+                    <img src="assets/lbn.png" alt="Arabe" onclick="alterarIdioma('lb')" class="bandeira">
                 </div>
-                <a href="#sobre" onclick="closeMenu()">Sobre</a>
-                <a href="#skills" onclick="closeMenu()">Skills</a>
-                <a href="#projetos" onclick="closeMenu()">Projetos</a>
-                <a href="#rs" onclick="closeMenu()">Redes Sociais</a>
-                <a href="#ec" onclick="closeMenu()">Entre em Contato</a>
-                <a href="https://wa.me/5544998705279" target="_blank" onclick="closeMenu()">Whatsapp</a>
+                <a href="#sobre" onclick="closeMenu()" data-i18n = "ssobre" >Sobre</a>
+                <a href="#skills" onclick="closeMenu()" data-i18n = "sk">Skills</a>
+                <a href="#projetos" onclick="closeMenu()"data-i18n = "pjt">Projetos</a>
+                <a href="#rs" onclick="closeMenu()"data-i18n = "redes">Redes Sociais</a>
+                <a href="#ec" onclick="closeMenu()"data-i18n = "ctt">Entre em Contato</a>
+                <a href="https://wa.me/5544998705279" target="_blank"  onclick="closeMenu()" ><i class="fab fa-whatsapp"></i></a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
@@ -70,7 +72,7 @@
                         </div>
                         <div class="btn">
                             <a href="assets/curriculo.pdf" download="curriculo.pdf" type="application/pdf"  rel="_self"> 
-                            <button>Download CV</button> 
+                            <button><span data-i18n="curriculo"> Download CV </span></button> 
                         </a>
                             
                         </div>
@@ -118,7 +120,7 @@
 
                         <div class="card-body">
                         <h3 class="card-local"><span data-i18n="api">Utilizando API</span></h3>
-                        <h2 class="card-titulo">Pokedex</h2>
+                        <h2 class="card-titulo"><span data-i18n="pkdx">Pokedex</span>  </h2>
                         <p class="card-texto"> <span data-i18n="pokedex">Projeto desenvolvido para o 4º ano do meu curso técnico em informática pelo IFPR,
                             utilizando HTML, CSS e JavaScript.</span> 
                             </p>
@@ -137,8 +139,8 @@
                         </div>
 
                         <div class="card-body">
-                        <h3 class="card-local">Landing Page</h3>
-                        <h2 class="card-titulo">Onixx</h2>
+                        <h3 class="card-local"><span data-i18n="lp">Landing Page</span></h3>
+                        <h2 class="card-titulo"><span data-i18n="onx">Onixx</span></h2>
                         <p class="card-texto"> <span data-i18n="onixx"> Projeto ainda em progresso juntamente ao meu grupo, 
                             onde iremos desenvolver um sistema real para uma garagem de carros.</span> 
                             </p>
@@ -159,7 +161,7 @@
 
                         <div class="card-body">
                         <h3 class="card-local"> <span data-i18n="upp">Um projeto em python</span></h3>
-                        <h2 class="card-titulo">JockeyPow</h2>
+                        <h2 class="card-titulo"><span data-i18n="jkp">JockeyPow</span></h2>
                         <p class="card-texto"> <span data-i18n="ppt"> Jogo "Pedra, papel e tesoura", desenvolvido em python utilizando apenas estruturas 
                             de repetição while e condicionais if/elif </span> 
                             </p>
@@ -186,6 +188,17 @@
             </section>
             
         <script src="script.js"> </script>
+        
+        <span id="swal-title" data-i18n="construcao" style="display:none;">🚧 Projeto em Construção 🚧</span>
+        <span id="swal-text" data-i18n="sweet" style="display:none;">O projeto Onixx ainda está sendo desenvolvido. Em breve traremos novidades!</span>
+        <span id="swal-footer" data-i18n="sweet2" style="display:none;"><i>Acompanhe pelo meu GitHub ou redes sociais para atualizações!</i></span>
+
+        <!-- Adicione isso em algum lugar do seu HTML (pode ser no final do body) -->
+        <span id="text-desenvolvedor" data-i18n="desenvolvedor" style="display:none;">Desenvolvedor</span>
+        <span id="text-estudante" data-i18n="estudante" style="display:none;">Estudante</span>
+        <span id="text-parametrizador" data-i18n="parametrizador" style="display:none;">Parametrizador</span>
+        <span id="text-investidor" data-i18n="investidor" style="display:none;">Investidor</span>
+
         
 </body>
 </html>

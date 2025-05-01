@@ -16,7 +16,7 @@ body{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    background: linear-gradient(to right, rgb(255, 255, 255) /*rgb(255,215,173)*/, rgb(194, 180, 116));
+    background: linear-gradient(to right, rgb(255, 255, 255) /*rgb(255,215,173)*/, rgb(194, 177, 101));
 }
 
 nav{
@@ -243,22 +243,6 @@ section{
     to{
         border-left: 3px solid rgb(199, 188, 142);
     }
-}
-
-@keyframes words {
-    0%, 25%{
-        content: "Desenvolvedor";
-    }
-    25%, 50%{
-        content: "Estudante";
-    }
-    50%, 75%{
-        content: "Parametrizador";
-    }
-    75%, 100%{
-        content: "Investidor";
-    }
-
 }
 
 .content p{

@@ -38,6 +38,13 @@
     "seunome": "Seu nome",
     "seuemail": "Seu email",
     "suamensagem": "Sua mensagem",
-    "enviar": "Enviar"
+    "enviar": "Enviar",
+
+    "curriculo": "Download CV",
+
+    "desenvolvedor": "Desenvolvedor",
+    "estudante":"Estudante",
+    "parametrizador":"Parametrizador",
+    "investidor":"Investidor"
                                 
 }
